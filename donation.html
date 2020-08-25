@@ -1,0 +1,117 @@
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="./index.css" />
+        <link rel="stylesheet" href="./donation.css" />
+        <script defer src="./index.js"></script>
+        <script src="https://www.paypal.com/sdk/js?client-id=sb&currency=USD" data-sdk-integration-source="button-factory"></script>
+        <title>aaa : Donation</title>
+    </head>
+    <body>
+		<header>
+			<div class="logo">
+				<h1><a href="index.html">AAA</a></h1>
+			</div>
+			<button id="menu">MENU</button>
+			<div class="side-menu hide">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="competitions.html">Competitions</a></li>
+					<li><a href="summer.html">Summer Programs</a></li>
+					<li><a href="donation.html">Donation</a></li>
+                    <li><a href="https://teespring.com/stores/tech-with-tim-merch-shop">Products</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="teams.html">Our teams</a></li>
+					<li><a href="about.html">About Us</a></li>
+				</ul>
+			</div>
+        </header>
+        <br><br><br><br>
+        <div id="paypal-button-container"></div>
+        <script>
+          paypal.Buttons({
+              style: {
+                  shape: 'rect',
+                  color: 'gold',
+                  layout: 'vertical',
+                  label: 'paypal',
+                  
+              },
+              createOrder: function(data, actions) {
+                  return actions.order.create({
+                      purchase_units: [{
+                          amount: {
+                              value: '1'
+                          }
+                      }]
+                  });
+              },
+              onApprove: function(data, actions) {
+                  return actions.order.capture().then(function(details) {
+                      alert('Transaction completed by ' + details.payer.name.given_name + '!');
+                  });
+              }
+          }).render('#paypal-button-container');
+        </script>
+            <br><br><br><br><br><br><br><br>   
+		<footer>
+			<section class="foot-first">
+				<h2><a href="index.html">AAA</a></h2>
+			</section>
+			<div class="foot-container">
+				<div class="foot-card">
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="competitions.html">Competitions</a></li>
+						<li><a href="summer.html">Summer Programs</a></li>
+						<li><a href="donation.html">Donation</a></li>
+						<li><a href="donation.html">Donation</a></li>
+						<li><a href="contact.html">Contact US</a></li>
+						<li><a href="https://teespring.com/stores/tech-with-tim-merch-shop">Products</a></li>
+						<li><a href="teams.html">Our Teams</a></li>
+						<li><a href="about.html">About Us</a></li>
+					</ul>
+				</div>
+				<div class="foot-card">
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="competitions.html">Competitions</a></li>
+						<li><a href="summer.html">Summer Programs</a></li>
+						<li><a href="donation.html">Donation</a></li>
+						<li><a href="donation.html">Donation</a></li>
+						<li><a href="contact.html">Contact US</a></li>
+						<li><a href="https://teespring.com/stores/tech-with-tim-merch-shop">Products</a></li>
+						<li><a href="teams.html">Our Teams</a></li>
+						<li><a href="about.html">About Us</a></li>
+					</ul>
+				</div>
+				<div class="foot-card">
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="competitions.html">Competitions</a></li>
+						<li><a href="summer.html">Summer Programs</a></li>
+						<li><a href="donation.html">Donation</a></li>
+						<li><a href="donation.html">Donation</a></li>
+						<li><a href="contact.html">Contact US</a></li>
+						<li><a href="https://teespring.com/stores/tech-with-tim-merch-shop">Products</a></li>
+						<li><a href="teams.html">Our Teams</a></li>
+						<li><a href="about.html">About Us</a></li>
+					</ul>
+				</div>
+				<div class="foot-card">
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="competitions.html">Competitions</a></li>
+						<li><a href="summer.html">Summer Programs</a></li>
+						<li><a href="donation.html">Donation</a></li>
+						<li><a href="donation.html">Donation</a></li>
+						<li><a href="contact.html">Contact US</a></li>
+						<li><a href="https://teespring.com/stores/tech-with-tim-merch-shop">Products</a></li>
+						<li><a href="teams.html">Our Teams</a></li>
+						<li><a href="about.html">About Us</a></li>
+					</ul>
+				</div>
+			</div>
+		</footer>
+    </body>
+</html>

@@ -1,0 +1,22 @@
+{
+  "name": "youbou",
+  "version": "1.0.0",
+  "description": "This a website of the students",
+  "main": "index.html",
+  "scripts": {
+    "test": "CMD"
+  },
+  "keywords": [
+    "youbou"
+  ],
+  "author": "youssef boumhaout",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "helmet": "^4.1.0",
+    "mongodb": "^3.6.0",
+    "mongoose": "^5.10.0",
+    "node": "^14.8.0",
+    "sweetalert": "^2.1.2"
+  }
+}

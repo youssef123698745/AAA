@@ -1,0 +1,127 @@
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="./index.css" />
+        <script defer src="./index.js"></script>
+        <script defer src="./contact.js"></script>
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+        <link rel="stylesheet" href="./contact.css" />
+        <script src="https://www.paypal.com/sdk/js?client-id=sb&currency=USD" data-sdk-integration-source="button-factory"></script>
+        <title>aaa : Contact Us</title>
+    </head>
+    <body>
+		<header>
+			<div class="logo">
+				<h1><a href="index.html">AAA</a></h1>
+			</div>
+			<button id="menu">MENU</button>
+			<div class="side-menu hide">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="competitions.html">Competitions</a></li>
+	  			    <li><a href="summer.html">Summer Programs</a></li>
+					<li><a href="donation.html">Donation</a></li>
+                    <li><a href="https://teespring.com/stores/tech-with-tim-merch-shop">Products</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="teams.html">Our teams</a></li>
+                    <li><a href="about.html">About Us</a></li>
+				</ul>
+			</div>
+        </header>
+        <br><br><br><br>   
+    <div class="container">
+      <div style="text-align:center">
+        <h2>Contact Us</h2>
+      </div>
+      <div class="row">
+        <div class="column">
+          <img style="width:100%" src="data:image/png;base64,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">
+        </div>
+        <div class="column">
+            <form id="my-form"
+            action="https://formspree.io/mgenqbdw"
+            method="POST"
+          >
+            <label for="fname">Your Name :</label>
+            <input type="text" id="fname" placeholder="Your name.." name="name" type="Name" required>
+            <label for="fname">Phone Number :</label>
+            <input type="text" id="fname" placeholder="Your Phone Num..." name="Phone Number" type="Name" required>
+            <label for="fname">Gmail :</label>
+            <input type="text" id="fname" placeholder="Your Gmail" name="Gmail" type="Name" required>
+            <label name = "country" for="country">Country</label>
+            <select name="country"  id="country" name="country">
+              <option value="australia">Australia</option>
+              <option value="canada">Canada</option>
+              <option value="usa">USA</option>
+              <option value="usa">Morocco</option>
+              <option value="usa">France</option>
+            </select>
+            <label for="subject">Message :</label>
+            <textarea type="text" name="message" required id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+            <button id="my-form-button" class="menu">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div> 
+            <br><br><br><br><br><br><br><br>   
+		<footer>
+			<section class="foot-first">
+				<h2><a href="index.html">AAA</a></h2>
+			</section>
+			<div class="foot-container">
+				<div class="foot-card">
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="competitions.html">Competitions</a></li>
+						<li><a href="summer.html">Summer Programs</a></li>
+						<li><a href="donation.html">Donation</a></li>
+                        <li><a href="donation.html">Donation</a></li>
+                        <li><a href="contact.html">Contact US</a></li>
+                        <li><a href="https://teespring.com/stores/tech-with-tim-merch-shop">Products</a></li>
+                        <li><a href="teams.html">Our Teams</a></li>
+                        <li><a href="about.html">About Us</a></li>
+					</ul>
+				</div>
+				<div class="foot-card">
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="competitions.html">Competitions</a></li>
+						<li><a href="summer.html">Summer Programs</a></li>
+						<li><a href="donation.html">Donation</a></li>
+                        <li><a href="donation.html">Donation</a></li>
+                        <li><a href="contact.html">Contact US</a></li>
+                        <li><a href="https://teespring.com/stores/tech-with-tim-merch-shop">Products</a></li>
+                        <li><a href="teams.html">Our Teams</a></li>
+                        <li><a href="about.html">About Us</a></li>
+					</ul>
+				</div>
+				<div class="foot-card">
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="competitions.html">Competitions</a></li>
+						<li><a href="summer.html">Summer Programs</a></li>
+						<li><a href="donation.html">Donation</a></li>
+                        <li><a href="donation.html">Donation</a></li>
+                        <li><a href="contact.html">Contact US</a></li>
+                        <li><a href="https://teespring.com/stores/tech-with-tim-merch-shop">Products</a></li>
+                        <li><a href="teams.html">Our Teams</a></li>
+                        <li><a href="about.html">About Us</a></li>
+					</ul>
+				</div>
+				<div class="foot-card">
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="competitions.html">Competitions</a></li>
+						<li><a href="summer.html">Summer Programs</a></li>
+						<li><a href="donation.html">Donation</a></li>
+                        <li><a href="donation.html">Donation</a></li>
+                        <li><a href="contact.html">Contact US</a></li>
+                        <li><a href="https://teespring.com/stores/tech-with-tim-merch-shop">Products</a></li>
+                        <li><a href="teams.html">Our Teams</a></li>
+                        <li><a href="about.html">About Us</a></li>
+					</ul>
+				</div>
+			</div>
+		</footer>
+    </body>
+</html>

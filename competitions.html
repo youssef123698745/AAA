@@ -1,0 +1,172 @@
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="./index.css" />
+        <link rel="stylesheet" href="./competitions.css" />
+        <script defer src="./index.js"></script>
+        <script defer src="./competitions.js"></script>
+        <title>aaa : Competitions</title>
+    </head>
+    <body>
+		<header>
+			<div class="logo">
+				<h1><a href="index.html">AAA</a></h1>
+			</div>
+			<button id="menu">MENU</button>
+			<div class="side-menu hide">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="competitions.html">Competitions</a></li>
+					<li><a href="summer.html">Summer Programs</a></li>
+					<li><a href="donation.html">Donation</a></li>
+          <li><a href="https://teespring.com/stores/tech-with-tim-merch-shop">Products</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="teams.html">Our teams</a></li>
+					<li><a href="about.html">About Us</a></li>
+        </ul>
+			</div>
+        </header>
+        <br><br><br><br>
+        <div class="bod">
+            <style>
+                .title{
+                    text-align: center;
+                    align-items: center;
+                }
+                .img{
+                    width: 100%;
+                    height: 200px;
+                }
+            </style>
+            <div class="title">
+                <h1>Choose your favorite type in competitions :</h1>
+            </div>
+            <br><br>
+            <div class="main1">					
+            <div id="myBtnContainer">
+              <button class="btn1" onclick="filterSelection('all')"> Show all</button>
+              <button class="btn1" onclick="filterSelection('cs')">Computer Sience</button>
+              <button class="btn1" onclick="filterSelection('math')">Math</button>
+              <button class="btn1" onclick="filterSelection('arts')"> Arts</button>
+            </div>
+            <div class="row">
+              <div class="column cs">
+                <div class="content">
+                  <img class="img" src="https://upload.wikimedia.org/wikipedia/en/1/1d/ICPC_International_Collegiate_Programming_Contest_logo%2C_Aug_2018.png" style="width:100%">
+                  <p>Aaa aaa aaaa...</p>
+                </div>
+              </div>
+              <div class="column cs">
+                <div class="content">
+                <img class="img" src="https://www.acm.org/binaries/content/gallery/acm/ctas/src.jpg/src.jpg/acm%3Adesktopcta" style="width:100%">
+                <p>Aaa aaa aaaa...</p>
+                </div>
+              </div>
+              <div class="column cs">
+                <div class="content">
+                    <img class="img" src="data:image/png;base64,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" style="width:100%">
+                    <p>Aaa aaa aaaa...</p>
+                </div>
+              </div>
+              
+              <div class="column math">
+                <div class="content">
+                  <img class="img" src="https://upload.wikimedia.org/wikipedia/commons/1/17/IMO_logo.svg" style="width:100%">
+                  <p>Aaa aaa aaaa...</p>
+                </div>
+              </div>
+              <div class="column math">
+                <div class="content">
+                <img class="img" src="https://sasmo.id/wp-content/uploads/2016/08/sasmo-flags-CONCEPT-for-web-site-01-1.jpg" style="width:100%">
+                <p>Aaa aaa aaaa...</p>
+                </div>
+              </div>
+              <div class="column math">
+                <div class="content">
+                <img class="img" src="https://www.semagnet.org/wp-content/uploads/2018/11/MAA-American-Mathematics-Competitions.png" style="width:100%">
+                <p>Aaa aaa aaaa...</p>
+                </div>
+              </div>
+            
+              <div class="column arts">
+                <div class="content">
+                  <img class="img" src="https://africanartists.org/images/events/1290376446-580x325.jpg" style="width:100%">
+                  <p>Aaa aaa aaaa...</p>
+                </div>
+              </div>
+              <div class="column arts">
+                <div class="content">
+                <img class="img" src="https://www.kttn.com/wp-content/uploads/2018/03/Art-Competition.jpg" style="width:100%">
+                <p>Aaa aaa aaaa...</p>
+                  </div>
+              </div>
+              <div class="column arts">
+                <div class="content">
+                <img class="img" src="https://wistatefair.com/competitions/wp-content/uploads/2013/11/callforartists-thumbnail.jpg" style="width:100%">
+                <p>Aaa aaa aaaa...</p>
+                </div>
+              </div>
+            <!-- END GRID -->
+            </div>
+            <br><br><br><br><br><br><br><br>   
+		<footer>
+			<section class="foot-first">
+				<h2><a href="index.html">AAA</a></h2>
+			</section>
+			<div class="foot-container">
+				<div class="foot-card">
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="competitions.html">Competitions</a></li>
+						<li><a href="summer.html">Summer Programs</a></li>
+						<li><a href="donation.html">Donation</a></li>
+            <li><a href="donation.html">Donation</a></li>
+            <li><a href="contact.html">Contact US</a></li>
+            <li><a href="https://teespring.com/stores/tech-with-tim-merch-shop">Products</a></li>
+            <li><a href="teams.html">Our Teams</a></li>
+            <li><a href="about.html">About Us</a></li>
+					</ul>
+				</div>
+				<div class="foot-card">
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="competitions.html">Competitions</a></li>
+						<li><a href="summer.html">Summer Programs</a></li>
+						<li><a href="donation.html">Donation</a></li>
+            <li><a href="donation.html">Donation</a></li>
+            <li><a href="contact.html">Contact US</a></li>
+            <li><a href="https://teespring.com/stores/tech-with-tim-merch-shop">Products</a></li>
+            <li><a href="teams.html">Our Teams</a></li>
+            <li><a href="about.html">About Us</a></li>
+          </ul>
+				</div>
+				<div class="foot-card">
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="competitions.html">Competitions</a></li>
+						<li><a href="summer.html">Summer Programs</a></li>
+						<li><a href="donation.html">Donation</a></li>
+            <li><a href="donation.html">Donation</a></li>
+            <li><a href="contact.html">Contact US</a></li>
+            <li><a href="https://teespring.com/stores/tech-with-tim-merch-shop">Products</a></li>
+            <li><a href="teams.html">Our Teams</a></li>
+            <li><a href="about.html">About Us</a></li>
+					</ul>
+				</div>
+				<div class="foot-card">
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="competitions.html">Competitions</a></li>
+						<li><a href="summer.html">Summer Programs</a></li>
+						<li><a href="donation.html">Donation</a></li>
+            <li><a href="donation.html">Donation</a></li>
+            <li><a href="contact.html">Contact US</a></li>
+            <li><a href="https://teespring.com/stores/tech-with-tim-merch-shop">Products</a></li>
+            <li><a href="teams.html">Our Teams</a></li>
+            <li><a href="about.html">About Us</a></li>
+					</ul>
+				</div>
+			</div>
+		</footer>
+    </body>
+</html>
